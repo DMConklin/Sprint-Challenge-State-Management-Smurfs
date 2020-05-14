@@ -14,9 +14,11 @@ const mapStateToProps = state => {
 }
 
 const App = props => {
+    const getSmurfs = props.getSmurfs;
+
     useEffect(() => {
-        props.getSmurfs();
-    }, [])
+        getSmurfs();
+    }, [getSmurfs])
 
     return (
       <div className="App">
