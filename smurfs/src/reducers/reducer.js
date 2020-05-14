@@ -22,7 +22,6 @@ export const reducer = (state = initialState, action) => {
         case FETCH_SMURFS_FAIL:
             return {
                 ...state,
-                isFetching: false,
                 error: 'There was an error'
             }
         default:
