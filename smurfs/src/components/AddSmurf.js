@@ -18,7 +18,6 @@ const AddSmurf = props => {
 
     const submitNewSmurf = e => {
         e.preventDefault();
-        console.log(smurf);
         props.postSmurf(smurf);
     }
 
